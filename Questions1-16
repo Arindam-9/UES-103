@@ -1,0 +1,337 @@
+NAME-ARINDAM
+ROLLN0-1025220028
+BATCH-1A32
+
+
+
+
+Ans-1   Choose a Relevant File Name Without Spaces
+For example:
+program.c
+the File Extension should be( .c )
+When saving your file in an editor (like Notepad, VS Code), set the filename exactly with the .c extension, not .cpp. 
+(eg-assign.c)
+Avoid Spaces in the Filename
+If you want multiple words, use underscores (my_program.c), or hyphens (my-program.c). Spaces are not allowed.
+
+
+Ans-2   Create a New Folder on Your Desktop
+Right-click on an empty spot on the desktop.
+Select New then Folder.
+Name the folder like:
+(Desktop_Files)
+ Move All Files into the New Folder then
+Select all files on the desktop -you can press( Ctrl + A )
+Drag and drop the selected files into the new folder.
+
+
+Ans-3,5   Program to check compiler works fine also to print hello world
+
+#include <stdio.h> 
+int main() 
+{
+      printf("Hello, World!\n");
+
+      return 0; 
+}
+
+Ans-6   
+#include <stdio.h>
+int main() {
+    int num;
+
+    printf("Enter an integer: ");
+    scanf("%d", &num);  
+
+    printf("You entered: %d\n", num);
+
+    return 0;
+} 
+
+
+Ans7-
+#include <stdio.h>
+int main() {
+    float num;
+
+    printf("Enter a decimal number: ");
+    scanf("%f", &num); 
+
+    printf("You entered: %f\n", num); 
+
+    return 0;
+}
+
+
+Ans8-
+#include <stdio.h>
+int main() {
+    char ch;
+
+    printf("Enter a character: ");
+    scanf("%c", &ch);  
+
+    printf("You entered: %c\n", ch);  
+
+    return 0;
+}
+
+
+Ans9-
+#include <stdio.h>
+
+int main() {
+    int numerator, denominator;
+
+    printf("Enter the numerator: ");
+    scanf("%d", &numerator);
+
+    printf("Enter the denominator: ");
+    scanf("%d", &denominator);
+
+    printf("The fraction is: %d/%d\n", numerator, denominator);
+
+    return 0;
+}
+
+
+Ans10-
+[ADD]
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    printf("Enter two integers for addition: ");
+    scanf("%d %d", &a, &b);
+
+    int sum = a + b;
+    printf("Sum = %d\n", sum);
+
+    return 0;
+}
+
+[SUBTRACT]
+
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    printf("Enter two integers for subtraction: ");
+    scanf("%d %d", &a, &b);
+
+    int difference = a - b;
+    printf("Difference = %d\n", difference);
+
+    return 0;
+}
+
+[MULTIPLY]
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    printf("Enter two integers for multiplication: ");
+    scanf("%d %d", &a, &b);
+
+    int product = a * b;
+    printf("Product = %d\n", product);
+
+    return 0;
+}
+
+[DIVIDE]
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    printf("Enter two integers for division: ");
+    scanf("%d %d", &a, &b);
+
+    if (b == 0) {
+        printf("Error: Division by zero is undefined.\n");
+    } else {
+        int quotient = a / b;
+        printf("Quotient = %d\n", quotient);
+    }
+
+    return 0;
+}
+
+[MODULUS]
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    printf("Enter two integers for modulus operation: ");
+    scanf("%d %d", &a, &b);
+
+    if (b == 0) {
+        printf("Error: Modulus by zero is undefined.\n");
+    } else {
+        int remainder = a % b;
+        printf("Remainder = %d\n", remainder);
+    }
+
+    return 0;
+}
+
+Ans11-
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double number, nthRoot;
+    int n;
+
+    
+    printf("Enter the number: ");
+    scanf("%lf", &number);
+    
+    printf("Enter the value of n for nth root: ");
+    scanf("%d", &n);
+
+    nthRoot = pow(number, 1.0 / n);
+
+    printf("The %dth root of %.2lf is: %.4lf\n", n, number, nthRoot);
+
+    return 0;
+}
+
+
+Ans12-
+
+#include <stdio.h>
+
+int main() {
+    float radius, area;
+    const float PI = 3.14159;
+
+    printf("Enter the radius of the circle: ");
+    scanf("%f", &radius);
+
+    area = PI * radius * radius;
+
+    printf("The area of the circle with radius %.2f is %.4f\n", radius, area);
+
+    return 0;
+}
+
+Ans13-
+
+#include <stdio.h>
+
+int main() {
+    float principal, rate, time, simpleInterest;
+
+    printf("Enter the principal amount: ");
+    scanf("%f", &principal);
+
+    printf("Enter the rate of interest (in percentage): ");
+    scanf("%f", &rate);
+
+    printf("Enter the time period (in years): ");
+    scanf("%f", &time);
+
+    simpleInterest = (principal * rate * time) / 100;
+
+    printf("Simple Interest = %.2f\n", simpleInterest);
+
+    return 0;
+}
+
+Ans14-
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double principal, rate, time, compoundInterest, amount;
+    int n;
+
+    printf("Enter the principal amount: ");
+    scanf("%lf", &principal);
+
+    printf("Enter the rate of interest (in percentage): ");
+    scanf("%lf", &rate);
+
+    printf("Enter the time period (in years): ");
+    scanf("%lf", &time);
+
+    printf("Enter the number of times interest is compounded per year: ");
+    scanf("%d", &n);
+
+    amount = principal * pow((1 + rate / (100 * n)), n * time);
+
+    compoundInterest = amount - principal;
+
+    printf("Compound Interest = %.4lf\n", compoundInterest);
+
+    return 0;
+}
+
+Ans15-
+
+#include <stdio.h>
+
+int main() {
+    float basic, da, ta, gross_salary;
+
+    printf("Enter the basic salary: ");
+    scanf("%f", &basic);
+  
+    da = 0.10 * basic;  // 10% of basic
+    ta = 0.12 * basic;  // 12% of basic
+   
+    gross_salary = basic + da + ta;
+  
+    printf("Gross Salary = %.2f\n", gross_salary);
+
+    return 0;
+}
+
+Ans16-
+Start (Green Oval)
+Meaning: Indicates where the algorithm begins.
+Action: Initialize the program and define the numbers list as .
+
+"num" Assignment (Label/Text)
+Meaning: num is defined as the first value in the numbers list.
+Action: Sets up the first loop variable for processing.
+
+Decision (Orange Diamond)
+Meaning: A decision point checks if num is the last number in the sequence.
+Action: Evaluates whether the current number is the last in the list.
+
+Print Statement (Teal Parallelogram)
+Meaning: Displays the value of num if it's not the last number.
+Action: If the condition evaluates to "No," the program prints num.
+
+Assignment Arrow (Horizontal Arrow)
+Meaning: Moves to the next number in the list by reassigning num.
+Action: Sets up next iteration with the following number in the list.
+
+End (Red Oval)
+Meaning: Signals where the process stops.
+Action: Terminates the program when num is the last number in the list.
+
+What The Flowchart Does
+The flowchart starts with a predefined list of numbers: .
+It assigns the first value to the variable num.
+For each iteration, the program checks: Is num the last number? If No, it prints num and assigns the next number to num.
+This loop continues until num is the last number in the list, at which point the algorithm ends without printing that last number
+
+
+*********************************************************************************************************************************************************************************************************************8
+
+
+
+
+
+
+
+
+
+
+
+
+
