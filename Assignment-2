@@ -1,0 +1,148 @@
+Name-Arindam
+Enrollment-1025220028
+batch-1A32
+
+Ans-1 
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int a,b,c,d,e;
+    a =  sin(3.14);
+    b = cos(3.14);
+    c = log(10);
+    d = pow(2,4);
+    e = sqrt(16);
+    printf("sin(360) = %d \n cos(360) = %d\n log(10)= %d\n 2 raise to power 4 = %d\n square root of 16 = %d",a,b,c,d,e);
+return 0;
+}
+
+Ans-2
+#include<stdio.h>
+#include<math.h>
+int main(){
+    printf("enter the value of the of the quadratic equation \n (a)x2 + (b)x + (c) \n enter a =");
+    int a,b,c;
+    scanf("%d",&a);
+    printf("\n enter b ");
+    scanf("%d",&b);
+    printf("\n enter c ");
+    scanf("%d",&c);
+    int root1,root2,d,s,de,n;
+    n = 2;
+    s = pow(b,n);
+    d = s-(4*a*c);
+    de = sqrt(d);
+    root1 = (-b + de)/(2*a);
+    printf("\n root is %d",root1);
+    root2 = (-b - de)/(2*a);
+    printf("\n 2nd root is %d",root2);
+    printf("\n  s = %d d = %d de = %d",s,d,de);
+    return 0;
+}
+
+Ans-3
+#include<stdio.h>
+int main(){
+    printf("welcome \n using the console statemensts \t and now the last one \b dkhflash");
+}
+
+ans-4
+#include<stdio.h>
+int main(){
+    int a ,b;
+    a = 2;
+    printf("a = %d\n",a);
+    a += 2;
+    printf("a = %d\n",a);
+    a -= 3;
+    printf("a = %d\n",a);
+    a *= 2;
+    printf("a = %d\n",a);
+    a /= 2;
+    printf("a = %d\n",a);
+    a %= 2;
+    printf("a = %d\n",a);
+    return 0;
+
+}
+
+
+Ans-5
+#include<stdio.h>
+int main(){
+    int a,b,c;
+    a = 2;
+    b = 3;
+    
+    c = a;
+    a = b;
+    b = c;
+    printf("now a = %d \n b = %d", a,b);
+    return 0;
+}
+
+
+Ans-6
+#include<stdio.h>
+int main(){
+    int a,b ;
+    a = 8;
+    printf(" a = %d\n",a);
+    a = a >>1;
+    printf(" a = %d\n",a);
+    a = a<<2;
+    printf(" a = %d\n",a);
+    return 0;
+}
+
+
+Ans-7
+#include<stdio.h>
+int main(){
+    int a,b,c;
+    a = 3;
+    b = 5;
+    c = (a>b)?a:b;
+    printf("c = %d",c);
+    return 0;
+}
+
+
+Ans-8
+#include<stdio.h>
+int main(){
+    int a;
+    float b;
+    char c;
+    long int d;
+    double e;
+    char type = typeof(a);
+    return 0;
+
+}
+
+
+Ans-9
+#include<stdio.h>
+int main(){
+    int a,b;
+    a = 3;
+    b = 2;
+    float c;
+    c = (float)a/b;
+    printf("%f",c);
+return 0;
+}
+
+
+Ans-10
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int a = 2;
+    int b = -5;
+    int c;
+    c = pow(b,a);
+    printf("ans is %d", c);
+    return 0;
+}
